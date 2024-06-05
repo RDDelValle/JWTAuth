@@ -1,3 +1,4 @@
+using JWTAuth.Data.Auth;
 using JWTAuth.Data.Context;
 using JWTAuth.Data.Entities;
 using Microsoft.AspNetCore.Builder;
@@ -12,7 +13,7 @@ namespace JWTAuth.Data;
 public static class Extensions
 {
     public static WebApplicationBuilder AddData(this WebApplicationBuilder builder)
-        => builder.AddDataContext().AddDataIdentity();
+        => builder.AddDataContext().AddDataIdentity().AddAuthService();
     
     private static WebApplicationBuilder AddDataContext(this WebApplicationBuilder builder)
     {

@@ -5,8 +5,8 @@ POST {{JWTAuth.Api_HostAddress}}/Auth/Login
 Content-Type: application/json
 
 {
-  "email": "user@example.com",
-  "password": "user@example.com"
+  "email": "user@domain.com",
+  "password": "Password*1"
 }
 
 ### /Auth/Refresh (Anonymous Request)
@@ -14,10 +14,10 @@ POST {{JWTAuth.Api_HostAddress}}/Auth/Refresh
 Content-Type: application/json
 
 {
-  "authToken": "[AuthToken]",
-  "refreshToken": "[RefreshToken]"
+  "authToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidXNlckBkb21haW4uY29tIiwianRpIjoiYTk2YjRlNTktNTAxMi00NDNkLTlhMmMtYjRmZWU2YWMyMTdlIiwiZXhwIjoxNzE3NjI0NTYyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjQzIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzI0MyJ9.i00J9Xtkf29_uCWAt7Eo3287rnxIC6vhs9cyDGWeXxc",
+  "refreshToken": "O8ABEZ+XvX5vbARggQit1RYUxBNcS0FRoQCVTwPz85jHL58C3wh3H2Nu95rfYzNW74fK0rTxjCAvyxH2kJiw8w=="
 }
 
 ### /Auth/Revoke (Authorized Request)
 DELETE {{JWTAuth.Api_HostAddress}}/Auth/Revoke
-Authorization: Bearer [Token]
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidXNlckBkb21haW4uY29tIiwianRpIjoiOTAzM2QwMDEtYmI3Zi00NDllLTk4YjItYmUwNjlhNWU3Y2RlIiwiZXhwIjoxNzE3NjI1NjMwLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjQzIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzI0MyJ9.6CNSyVPVrHM2o4L3sAeiSHFv1S3tAPqhzrkVPEIosFA

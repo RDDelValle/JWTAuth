@@ -3,16 +3,19 @@ using System;
 using JWTAuth.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace JWTAuth.Data.Migrations.InitialCreate
+namespace JWTAuth.Data.Migrations.CreateTokens
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240605212520_CreateTokens")]
+    partial class CreateTokens
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.6");
@@ -86,24 +89,6 @@ namespace JWTAuth.Data.Migrations.InitialCreate
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "62cf5133-fb72-4cc1-9bea-ff8bc6c21f01",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "f2531cc3-fa7f-4a08-9923-c5a88c485224",
-                            Email = "user@domain.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "USER@DOMAIN.COM",
-                            NormalizedUserName = "USER@DOMAIN.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJtv6uvrynxM1q8GnC4f76UNIDaKdybiPcskjOt2vLsdDMu3hZ1KJFKkH7wW8/tdBA==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "15081b5d-462f-4ac6-a0b6-3f4942f990d4",
-                            TwoFactorEnabled = false,
-                            UserName = "user@domain.com"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
