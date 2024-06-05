@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTAuth.Api", "Api\JWTAuth.Api.csproj", "{75587E0F-0C58-4A3D-955A-A34753861B2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTAuth.Data", "Data\JWTAuth.Data.csproj", "{23560ADF-9CF3-4852-B532-85388C2C2D71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A31B38-1228-4D47-B6CC-CC2977982A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A31B38-1228-4D47-B6CC-CC2977982A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A31B38-1228-4D47-B6CC-CC2977982A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A31B38-1228-4D47-B6CC-CC2977982A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75587E0F-0C58-4A3D-955A-A34753861B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75587E0F-0C58-4A3D-955A-A34753861B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75587E0F-0C58-4A3D-955A-A34753861B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75587E0F-0C58-4A3D-955A-A34753861B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23560ADF-9CF3-4852-B532-85388C2C2D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23560ADF-9CF3-4852-B532-85388C2C2D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23560ADF-9CF3-4852-B532-85388C2C2D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23560ADF-9CF3-4852-B532-85388C2C2D71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
