@@ -1,4 +1,7 @@
+using JWTAuth.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.AddData();
 
 // Add services to the container.
 
