@@ -1,6 +1,23 @@
-@JWTAuth.Api_HostAddress = http://localhost:5104
+@JWTAuth.Api_HostAddress = https://localhost:7243
 
-GET {{JWTAuth.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+### /Auth/Login (Anonymous Request)
+POST {{JWTAuth.Api_HostAddress}}/Auth/Login
+Content-Type: application/json
 
-###
+{
+  "email": "user@example.com",
+  "password": "user@example.com"
+}
+
+### /Auth/Refresh (Anonymous Request)
+POST {{JWTAuth.Api_HostAddress}}/Auth/Refresh
+Content-Type: application/json
+
+{
+  "authToken": "[AuthToken]",
+  "refreshToken": "[RefreshToken]"
+}
+
+### /Auth/Revoke (Authorized Request)
+DELETE {{JWTAuth.Api_HostAddress}}/Auth/Revoke
+Authorization: Bearer [Token]
